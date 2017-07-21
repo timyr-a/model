@@ -50,6 +50,14 @@ public class Main {
         );
         printFigureInfo(circle);      */
 
+        System.out.print("Введите стороны трапеции: ");
+        Trapeze trapeze = new Trapeze(
+                scanner.nextDouble(),
+                scanner.nextDouble(),
+                scanner.nextDouble(),
+                scanner.nextDouble()
+        );
+        printFigureInfo(trapeze);
 
     }
 
