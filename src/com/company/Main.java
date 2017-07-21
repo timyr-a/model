@@ -1,22 +1,62 @@
 package com.company;
 
+import com.company.model.*;
 
-import com.company.model.Trianqle;
-
-import java.io.PrintStream;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
-        System.out.println("Введите стороны треугольника: ");
-        Scanner scanner = new  Scanner (System.in);
-        Trianqle trianqle = new Trianqle(scanner.nextDouble(),scanner.nextDouble(),scanner.nextDouble());
+        Scanner scanner = new Scanner(System.in);
+/*
+        System.out.print("Введите стороны треугольника: ");
+        Trianqle triangle = new Trianqle(
+                scanner.nextDouble(),
+                scanner.nextDouble(),
+                scanner.nextDouble()
+        );
+        printFigureInfo(triangle);
 
-        System.out.printf("Периьетр треугольника %.2f\n", trianqle.getPerimeter());
-        System.out.printf("Площадь треугольника %.2f",trianqle.getSquare());
+        System.out.print("Введите катеты прямоугольного треугольника: ");
+        RightTrianqle rightTriangle = new RightTrianqle(
+                scanner.nextDouble(),
+                scanner.nextDouble()
+        );
+        printFigureInfo(rightTriangle);
+
+        System.out.print("Введите боковую сторону и основание равнобедренного треугольника: ");
+        IsoTrianqle isoTriangle = new IsoTrianqle(
+                scanner.nextDouble(),
+                scanner.nextDouble()
+        );
+        printFigureInfo(isoTriangle);
+
+        System.out.print("Введите сторону равностороннего треугольника: ");
+        EqualTrianqle equalTriangle = new EqualTrianqle(
+                scanner.nextDouble()
+        );
+        printFigureInfo(equalTriangle);
+
+        System.out.print("Введите большую и малую оси эллипса: ");
+        Ellipse ellipse = new Ellipse(
+                scanner.nextDouble(),
+                scanner.nextDouble()
+        );
+        printFigureInfo(ellipse);
+
+        System.out.print("Введите диаметр окружности: ");
+        Circle circle = new Circle(
+                scanner.nextDouble()
+        );
+        printFigureInfo(circle);      */
 
 
     }
+
+    private static void printFigureInfo(Figure figure){
+        System.out.println(figure.getName());
+        System.out.printf("Периметр: %.2f\n", figure.getPerimeter());
+        System.out.printf("Площадь: %.2f\n", figure.getSquare());
+    }
+
 }

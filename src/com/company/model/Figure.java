@@ -6,12 +6,13 @@ package com.company.model;
 public abstract class Figure {
     private String name;
 
-    public Figure(String name) {
-        this.name = name;
+    public String getName() {
+        return name;
     }
 
-    public String getName() {return name;}
-
+    protected void setName(String name) {
+        this.name = name;
+    }
 
     /**
      * Метод вычисления площади фигуры
@@ -24,4 +25,7 @@ public abstract class Figure {
      * @return периметр фигуры
      */
     public abstract double getPerimeter();
+
 }
+
+
